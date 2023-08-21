@@ -1,17 +1,14 @@
 //your JS code here. If required.
 
-document.addEventListener("DOMContentLoaded",callme)
+document.addEventListener('DOMContentLoaded', function() {
+  const colorSelect = document.getElementById('colorSelect');
+  const removeButton = document.getElementById('removeButton');
 
-function callme(){
-
-let getbtn= document.getElementById("removeButton");
-document.addEventListner("click", removeitem);
-
-function removeitem(){
-	let getitem= document.getElementById("colorSelect");
-	const selectedindex=getitem.selectedindex;
-	if(selectedindex!== -1){
-		getitem.remove(selectedindex);
-	}
-}
-}
+  removeButton.addEventListener('click', function() {
+    const selectedIndex = colorSelect.selectedIndex;
+    
+    if (selectedIndex !== -1) { // Check if an option is selected
+      colorSelect.remove(selectedIndex);
+    }
+  });
+});
