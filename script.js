@@ -1,7 +1,7 @@
 //your JS code here. If required.
 
 let getbtn= document.getElementById("removeButton");
-document.addEventlistner("click", removeitem());
+document.addEventListner("click", removeitem);
 
 function removeitem(){
 	let getitem= document.getElementById("colorSelect");
