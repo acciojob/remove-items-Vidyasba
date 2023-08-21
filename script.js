@@ -1,5 +1,9 @@
 //your JS code here. If required.
 
+document.addEventListener("DOMContentLoaded",callme)
+
+function callme(){
+
 let getbtn= document.getElementById("removeButton");
 document.addEventListner("click", removeitem);
 
@@ -9,4 +13,5 @@ function removeitem(){
 	if(selectedindex!== -1){
 		getitem.remove(selectedindex);
 	}
+}
 }
